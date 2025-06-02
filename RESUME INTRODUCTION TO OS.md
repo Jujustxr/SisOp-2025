@@ -1,7 +1,4 @@
----
-title: Untitled
 
----
 
 # SISTEM OPERASI (INTRODUCTION TO OS)
 
