@@ -78,6 +78,19 @@ P2		5	15	15	10	10
 Average TurnAroundTime=8.250000
 Average WaitingTime=4.500000
 ```
+
+```mermaid
+gantt
+    title Gantt Chart (SJF Non-Preemptive)
+    dateFormat  X
+    axisFormat %S
+    section Processes
+    P1 : 0, 2
+    P3 : 2, 4
+    P4 : 6, 4
+    P2 : 10, 5
+```
+
 ANALISIS:
 Program C ini menunjukkan cara kerja algoritma penjadwalan **Shortest Job First** non-preemptive, dengan asumsi semua proses datang di waktu nol. Program ini dimulai dengan membuat sebuah struktur data untuk menyimpan informasi tiap proses, seperti ID proses, burst time, completion time, turnaround time, dan waiting time.
 
@@ -180,6 +193,19 @@ P1		7	6	14	7	1	1
 Average TurnAroundTime=5.333333
 Average WaitingTime=1.000000
 ```
+
+```mermaid
+gantt
+    title Gantt Chart (SJF with Arrival Time - Non-Preemptive)
+    dateFormat  X
+    axisFormat %S
+    section CPU Utilization
+    Idle : 0, 1
+    P3 : 1, 3
+    P2 : 4, 4
+    P1 : 8, 6
+```
+
 ANALISIS:
 Program C ini menjalankan algoritma **Shortest Job First** non-preemptive, tapi kali ini mempertimbangkan arrival time  tiap proses. Setiap proses disimpan dalam sebuah struktur data yang berisi ID proses, arrival time, burst time, start time, completion time, turnaround time, dan waiting time.
 
@@ -279,6 +305,19 @@ P4		6	6	19	13	7
 
 Average TurnAroundTime=5.750000
 Average WaitingTime=1.750000
+```
+```mermaid
+gantt
+    title Gantt Chart (SRTF Preemptive)
+    dateFormat  X
+    axisFormat %S
+    section CPU Utilization
+    Idle : 0, 2
+    P1 : 2, 2
+    Idle : 4, 1
+    P2 : 5, 3
+    P3 : 8, 5
+    P4 : 13, 6
 ```
 
 ANALISIS:
